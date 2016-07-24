@@ -1,0 +1,17 @@
+---
+driver:
+  name: vagrant
+  vagrantfiles:
+  - VagrantAdditionalConfig.rb
+provisioner:
+  name: chef_zero
+  chef_omnibus_install_options: -d /tmp/vagrant-cache/vagrant_omnibus
+  require_chef_omnibus: 12.10.24
+platforms:
+- name: ubuntu-14.04
+- name: centos-7.1
+suites:
+- name: default
+  run_list:
+  - recipe[tm-php::default]
+  attributes:
