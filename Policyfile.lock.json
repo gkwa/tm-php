@@ -1,0 +1,212 @@
+{
+  "revision_id": "16570c5f8cd1ff0f560322abc0255aaf9e3f4fdebd2e289e4cb332827a02f1c0",
+  "name": "tm-php",
+  "run_list": [
+    "recipe[tm-php::default]"
+  ],
+  "cookbook_locks": {
+    "ark": {
+      "version": "1.2.1",
+      "identifier": "828fa4f81209c57cf86efdcfe6d57eea91899c63",
+      "dotted_decimal_identifier": "36749685671725509.35176052700473045.139545929161827",
+      "cache_key": "ark-98f6d4420e03c7424ce9b00f60f25a0c1ff2df6d",
+      "origin": "git://github.com/taylormonacelli/ark.git",
+      "source_options": {
+        "git": "git://github.com/taylormonacelli/ark.git",
+        "revision": "98f6d4420e03c7424ce9b00f60f25a0c1ff2df6d"
+      }
+    },
+    "tm-php": {
+      "version": "0.1.19",
+      "identifier": "781784622d3365f1f1aeb932e7a62695bf768233",
+      "dotted_decimal_identifier": "33802854555530085.68101202120992678.42424604197427",
+      "source": ".",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": "git@github.com:taylormonacelli/tm-php",
+        "revision": "9ba663c968cbc307bb54afe040893a82f9f9dc2e",
+        "working_tree_clean": false,
+        "published": false,
+        "synchronized_remote_branches": [
+
+        ]
+      },
+      "source_options": {
+        "path": "."
+      }
+    },
+    "build-essential": {
+      "version": "6.0.4",
+      "identifier": "6ca850c821bde0e559359e33926756a6da7b8596",
+      "dotted_decimal_identifier": "30584362393255392.64555856489058919.95274630088086",
+      "cache_key": "build-essential-6.0.4-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/build-essential/versions/6.0.4/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/build-essential/versions/6.0.4/download",
+        "version": "6.0.4"
+      }
+    },
+    "seven_zip": {
+      "version": "2.0.1",
+      "identifier": "1ef062de1bc4cb14e4a78fb739e104eb9508473e",
+      "dotted_decimal_identifier": "8708556725142731.5880907856034273.5409864173374",
+      "cache_key": "seven_zip-2.0.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/seven_zip/versions/2.0.1/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/seven_zip/versions/2.0.1/download",
+        "version": "2.0.1"
+      }
+    },
+    "windows": {
+      "version": "1.44.3",
+      "identifier": "856961abed6d3eb7083b1dd1d71bdd130a809576",
+      "dotted_decimal_identifier": "37552040119725374.51518970734434075.243073850316150",
+      "cache_key": "windows-1.44.3-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/1.44.3/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/1.44.3/download",
+        "version": "1.44.3"
+      }
+    },
+    "chef_handler": {
+      "version": "1.4.0",
+      "identifier": "aa794c0c3a03d09a5e22ca2ffb70115fda923471",
+      "dotted_decimal_identifier": "47984113570415568.43450649927482224.19103386580081",
+      "cache_key": "chef_handler-1.4.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/chef_handler/versions/1.4.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/chef_handler/versions/1.4.0/download",
+        "version": "1.4.0"
+      }
+    },
+    "mingw": {
+      "version": "1.2.4",
+      "identifier": "c4f0ae0ce0635c9ec82cdc01b570a7dcc1b19521",
+      "dotted_decimal_identifier": "55433725766296412.44693141315499376.184566584284449",
+      "cache_key": "mingw-1.2.4-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/mingw/versions/1.2.4/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/mingw/versions/1.2.4/download",
+        "version": "1.2.4"
+      }
+    },
+    "compat_resource": {
+      "version": "12.10.7",
+      "identifier": "0cf5d376444495035f02b8cb1acf2b3e5a0a51e5",
+      "dotted_decimal_identifier": "3647988291617941.948890225023695.47546798592485",
+      "cache_key": "compat_resource-12.10.7-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/compat_resource/versions/12.10.7/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/compat_resource/versions/12.10.7/download",
+        "version": "12.10.7"
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "ark",
+        ">= 1.2.1"
+      ],
+      [
+        "tm-php",
+        ">= 0.0.0"
+      ],
+      [
+        "build-essential",
+        "= 6.0.4"
+      ],
+      [
+        "seven_zip",
+        "= 2.0.1"
+      ],
+      [
+        "windows",
+        "= 1.44.3"
+      ],
+      [
+        "chef_handler",
+        "= 1.4.0"
+      ],
+      [
+        "mingw",
+        "= 1.2.4"
+      ],
+      [
+        "compat_resource",
+        "= 12.10.7"
+      ]
+    ],
+    "dependencies": {
+      "ark (1.2.1)": [
+        [
+          "build-essential",
+          ">= 0.0.0"
+        ],
+        [
+          "windows",
+          ">= 0.0.0"
+        ],
+        [
+          "seven_zip",
+          ">= 0.0.0"
+        ]
+      ],
+      "build-essential (6.0.4)": [
+        [
+          "seven_zip",
+          ">= 0.0.0"
+        ],
+        [
+          "mingw",
+          ">= 1.1.0"
+        ],
+        [
+          "compat_resource",
+          ">= 12.10.0"
+        ]
+      ],
+      "seven_zip (2.0.1)": [
+        [
+          "windows",
+          ">= 1.2.2"
+        ]
+      ],
+      "windows (1.44.3)": [
+        [
+          "chef_handler",
+          ">= 0.0.0"
+        ]
+      ],
+      "chef_handler (1.4.0)": [
+
+      ],
+      "mingw (1.2.4)": [
+        [
+          "seven_zip",
+          ">= 0.0.0"
+        ],
+        [
+          "compat_resource",
+          ">= 0.0.0"
+        ]
+      ],
+      "compat_resource (12.10.7)": [
+
+      ],
+      "tm-php (0.1.19)": [
+        [
+          "ark",
+          ">= 1.2.1"
+        ]
+      ]
+    }
+  }
+}
