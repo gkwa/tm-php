@@ -1,8 +1,9 @@
 {
-  "revision_id": "16570c5f8cd1ff0f560322abc0255aaf9e3f4fdebd2e289e4cb332827a02f1c0",
+  "revision_id": "be229de2eeccb4e0d4b7c8da0721a876ad5dbe76995a3675e7878a381dca2af1",
   "name": "tm-php",
   "run_list": [
-    "recipe[tm-php::default]"
+    "recipe[tm-php::default]",
+    "recipe[vcruntime::vc12]"
   ],
   "cookbook_locks": {
     "ark": {
@@ -18,14 +19,14 @@
     },
     "tm-php": {
       "version": "0.1.19",
-      "identifier": "781784622d3365f1f1aeb932e7a62695bf768233",
-      "dotted_decimal_identifier": "33802854555530085.68101202120992678.42424604197427",
+      "identifier": "08e1009d8fffe9e9b069cf23cd25249062d098f4",
+      "dotted_decimal_identifier": "2499192573394921.65777638066867493.40202551728372",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "git@github.com:taylormonacelli/tm-php",
-        "revision": "9ba663c968cbc307bb54afe040893a82f9f9dc2e",
+        "revision": "5c5eae7e4141ca06d8af4881c648db305ad7ddf3",
         "working_tree_clean": false,
         "published": false,
         "synchronized_remote_branches": [
@@ -101,6 +102,17 @@
         "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/compat_resource/versions/12.10.7/download",
         "version": "12.10.7"
       }
+    },
+    "vcruntime": {
+      "version": "0.2.0",
+      "identifier": "97f7497f3b851aa27452cf87da89cdad222cb918",
+      "dotted_decimal_identifier": "42774616522589466.45726845245053577.226143486392600",
+      "cache_key": "vcruntime-0.2.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/vcruntime/versions/0.2.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/vcruntime/versions/0.2.0/download",
+        "version": "0.2.0"
+      }
     }
   },
   "default_attributes": {
@@ -142,6 +154,10 @@
       [
         "compat_resource",
         "= 12.10.7"
+      ],
+      [
+        "vcruntime",
+        "= 0.2.0"
       ]
     ],
     "dependencies": {
@@ -201,10 +217,20 @@
       "compat_resource (12.10.7)": [
 
       ],
+      "vcruntime (0.2.0)": [
+        [
+          "windows",
+          ">= 0.0.0"
+        ]
+      ],
       "tm-php (0.1.19)": [
         [
           "ark",
           ">= 1.2.1"
+        ],
+        [
+          "vcruntime",
+          ">= 0.0.0"
         ]
       ]
     }

@@ -4,6 +4,7 @@
 #
 # Copyright (c) 2016 The Authors, All Rights Reserved.
 
+include_recipe 'vcruntime::vc12'
 include_recipe 'ark'
 
 ark 'php-5.6.10-Win32-VC11-x86' do
