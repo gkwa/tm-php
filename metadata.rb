@@ -6,5 +6,4 @@ description 'Installs/Configures tm-php'
 long_description 'Installs/Configures tm-php'
 version '0.1.19'
 
-depends 'tm-seven_zip'
 depends 'ark', '>= 1.2.1'
