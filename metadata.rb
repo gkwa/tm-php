@@ -8,3 +8,5 @@ version '0.1.19'
 
 depends 'ark', '>= 1.2.1'
 depends 'vcruntime'
+depends 'windows'
+depends 'chocolatey'

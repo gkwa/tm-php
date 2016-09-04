@@ -4,14 +4,26 @@
 #
 # Copyright (c) 2016 The Authors, All Rights Reserved.
 
+include_recipe 'windows'
 include_recipe 'ark'
-include_recipe 'vcruntime::vc12'
+#include_recipe "vcruntime::vc#{node['php'][ node['php']['version'] ]['vcredist_ver']}"
+include_recipe "vcruntime::vc12"
+include_recipe "vcruntime::vc14"
+# include_recipe 'chocolatey'
 
-ark "PHP" do
-  url 'http://installer-bin.streambox.com/php-5.6.10-Win32-VC11-x86.zip'
-  owner 'administrator'
-  version '2.13'
+# chocolatey node['php'][ node['php']['version'] ]['chocolatey']['vc'] do
+#   action :install
+# end
+
+ark node['php']['package_name'] do
+  url node['php']['url']
+  owner 'Administrator'
+  version node['php']['version']
   win_install_dir 'c:\php'
   strip_components 0
   action :install
+end
+
+windows_path 'C:\php' do
+  action :add
 end

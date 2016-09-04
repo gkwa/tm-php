@@ -1,5 +1,5 @@
 {
-  "revision_id": "b3adf637c7604af4d7cb327a7212f0f460697c3b5f00e393208368a3350cc7f9",
+  "revision_id": "37fcabc88ee47932699f03aa4c0ffa615e892b0d9ade769c7394f61d7057608a",
   "name": "tm-php",
   "run_list": [
     "recipe[tm-php::default]"
@@ -18,14 +18,14 @@
     },
     "tm-php": {
       "version": "0.1.19",
-      "identifier": "e879f893c12edbcd4a1b63cd6a85812ce3486e14",
-      "dotted_decimal_identifier": "65436303134633691.57783851724663429.142029791718932",
+      "identifier": "afc5024c761ec1b65e8bc4f0af9919dcfa65260e",
+      "dotted_decimal_identifier": "49474734587780801.51332400158912409.28436884432398",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "git@github.com:taylormonacelli/tm-php",
-        "revision": "106e30b0720c26c46d2723a777753734b04fb439",
+        "revision": "d3c1b7e073e2ba8f4ab5775da1b0cd78cf2dbd56",
         "working_tree_clean": false,
         "published": false,
         "synchronized_remote_branches": [
@@ -34,6 +34,17 @@
       },
       "source_options": {
         "path": "."
+      }
+    },
+    "vcruntime": {
+      "version": "0.2.2",
+      "identifier": "b4da8bac24aee3a0cbb5ba6092dca2b68f2bcb56",
+      "dotted_decimal_identifier": "50905789231312611.45259977650115292.178904969759574",
+      "cache_key": "vcruntime-d0d04c668f7fa437e541e34a19ea276ce7fc07d9",
+      "origin": "git://github.com/taylormonacelli/vcruntime.git",
+      "source_options": {
+        "git": "git://github.com/taylormonacelli/vcruntime.git",
+        "revision": "d0d04c668f7fa437e541e34a19ea276ce7fc07d9"
       }
     },
     "build-essential": {
@@ -102,15 +113,15 @@
         "version": "12.14.0"
       }
     },
-    "vcruntime": {
-      "version": "0.2.0",
-      "identifier": "97f7497f3b851aa27452cf87da89cdad222cb918",
-      "dotted_decimal_identifier": "42774616522589466.45726845245053577.226143486392600",
-      "cache_key": "vcruntime-0.2.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/vcruntime/versions/0.2.0/download",
+    "chocolatey": {
+      "version": "1.0.2",
+      "identifier": "c93f2c48473674b4f3f2b969a41820eb343fed93",
+      "dotted_decimal_identifier": "56645929742579316.50933719626261528.36194566008211",
+      "cache_key": "chocolatey-1.0.2-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/chocolatey/versions/1.0.2/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/vcruntime/versions/0.2.0/download",
-        "version": "0.2.0"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/chocolatey/versions/1.0.2/download",
+        "version": "1.0.2"
       }
     }
   },
@@ -129,6 +140,10 @@
       [
         "tm-php",
         ">= 0.0.0"
+      ],
+      [
+        "vcruntime",
+        ">= 0.2.2"
       ],
       [
         "build-essential",
@@ -155,8 +170,8 @@
         "= 12.14.0"
       ],
       [
-        "vcruntime",
-        "= 0.2.0"
+        "chocolatey",
+        "= 1.0.2"
       ]
     ],
     "dependencies": {
@@ -216,10 +231,16 @@
       "compat_resource (12.14.0)": [
 
       ],
-      "vcruntime (0.2.0)": [
+      "vcruntime (0.2.2)": [
         [
           "windows",
           ">= 0.0.0"
+        ]
+      ],
+      "chocolatey (1.0.2)": [
+        [
+          "windows",
+          "~> 1.38"
         ]
       ],
       "tm-php (0.1.19)": [
@@ -229,6 +250,14 @@
         ],
         [
           "vcruntime",
+          ">= 0.0.0"
+        ],
+        [
+          "windows",
+          ">= 0.0.0"
+        ],
+        [
+          "chocolatey",
           ">= 0.0.0"
         ]
       ]
