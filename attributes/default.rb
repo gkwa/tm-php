@@ -2,7 +2,7 @@ default['php']['syspath']                    = true
 
 default['php']['package_name']               = 'PHP'
 default['php']['base_url']                   = "http://installer-bin.streambox.com"
-default['php']['version']                    = '5.6.10'
+default['php']['version']                    = '7.0.10'
 
 # php 5.6.2 uses vc11 - 2012
 default['php']['5.6.10']['vcredist_ver']     = '11'
