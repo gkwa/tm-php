@@ -1,5 +1,5 @@
 {
-  "revision_id": "3310cd2e5c00cdfc0ed2fdb506682c5ae3c80a5df91135435e4f39a5f440f5ec",
+  "revision_id": "971ca48a003a3c4e6c33d7c0922c159ac4451bc3af564743c48b26a469b69180",
   "name": "tm-php",
   "run_list": [
     "recipe[tm-php::default]"
@@ -18,15 +18,15 @@
     },
     "tm-php": {
       "version": "0.1.19",
-      "identifier": "9ad655f8981942429562200e2ccb983995cd4aee",
-      "dotted_decimal_identifier": "43582811144722754.18741597140036811.167373093817070",
+      "identifier": "387a72d5a3fe40a42b9d5c98a6c3b1666b3b21ab",
+      "dotted_decimal_identifier": "15897232324951616.46209851043915459.195053443817899",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "git@github.com:taylormonacelli/tm-php",
-        "revision": "d1c5f63a9fe05b071ac684bced4635a26f8d4796",
-        "working_tree_clean": true,
+        "revision": "dd2b88262d9f3d6108ceaeda1e7d9d683eb84874",
+        "working_tree_clean": false,
         "published": false,
         "synchronized_remote_branches": [
 
@@ -160,20 +160,6 @@
       ]
     ],
     "dependencies": {
-      "tm-php (0.1.19)": [
-        [
-          "ark",
-          ">= 1.2.1"
-        ],
-        [
-          "vcruntime",
-          ">= 0.0.0"
-        ],
-        [
-          "windows",
-          ">= 0.0.0"
-        ]
-      ],
       "ark (1.2.1)": [
         [
           "build-essential",
@@ -231,6 +217,20 @@
 
       ],
       "vcruntime (0.2.2)": [
+        [
+          "windows",
+          ">= 0.0.0"
+        ]
+      ],
+      "tm-php (0.1.19)": [
+        [
+          "ark",
+          ">= 1.2.1"
+        ],
+        [
+          "vcruntime",
+          ">= 0.0.0"
+        ],
         [
           "windows",
           ">= 0.0.0"
