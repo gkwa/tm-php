@@ -9,11 +9,6 @@ include_recipe 'ark'
 #include_recipe "vcruntime::vc#{node['php'][ node['php']['version'] ]['vcredist_ver']}"
 include_recipe "vcruntime::vc12"
 include_recipe "vcruntime::vc14"
-# include_recipe 'chocolatey'
-
-# chocolatey node['php'][ node['php']['version'] ]['chocolatey']['vc'] do
-#   action :install
-# end
 
 ark node['php']['package_name'] do
   url node['php']['url']

@@ -1,5 +1,5 @@
 {
-  "revision_id": "37fcabc88ee47932699f03aa4c0ffa615e892b0d9ade769c7394f61d7057608a",
+  "revision_id": "3310cd2e5c00cdfc0ed2fdb506682c5ae3c80a5df91135435e4f39a5f440f5ec",
   "name": "tm-php",
   "run_list": [
     "recipe[tm-php::default]"
@@ -18,15 +18,15 @@
     },
     "tm-php": {
       "version": "0.1.19",
-      "identifier": "afc5024c761ec1b65e8bc4f0af9919dcfa65260e",
-      "dotted_decimal_identifier": "49474734587780801.51332400158912409.28436884432398",
+      "identifier": "9ad655f8981942429562200e2ccb983995cd4aee",
+      "dotted_decimal_identifier": "43582811144722754.18741597140036811.167373093817070",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "git@github.com:taylormonacelli/tm-php",
-        "revision": "d3c1b7e073e2ba8f4ab5775da1b0cd78cf2dbd56",
-        "working_tree_clean": false,
+        "revision": "d1c5f63a9fe05b071ac684bced4635a26f8d4796",
+        "working_tree_clean": true,
         "published": false,
         "synchronized_remote_branches": [
 
@@ -112,17 +112,6 @@
         "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/compat_resource/versions/12.14.0/download",
         "version": "12.14.0"
       }
-    },
-    "chocolatey": {
-      "version": "1.0.2",
-      "identifier": "c93f2c48473674b4f3f2b969a41820eb343fed93",
-      "dotted_decimal_identifier": "56645929742579316.50933719626261528.36194566008211",
-      "cache_key": "chocolatey-1.0.2-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/chocolatey/versions/1.0.2/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/chocolatey/versions/1.0.2/download",
-        "version": "1.0.2"
-      }
     }
   },
   "default_attributes": {
@@ -168,13 +157,23 @@
       [
         "compat_resource",
         "= 12.14.0"
-      ],
-      [
-        "chocolatey",
-        "= 1.0.2"
       ]
     ],
     "dependencies": {
+      "tm-php (0.1.19)": [
+        [
+          "ark",
+          ">= 1.2.1"
+        ],
+        [
+          "vcruntime",
+          ">= 0.0.0"
+        ],
+        [
+          "windows",
+          ">= 0.0.0"
+        ]
+      ],
       "ark (1.2.1)": [
         [
           "build-essential",
@@ -234,30 +233,6 @@
       "vcruntime (0.2.2)": [
         [
           "windows",
-          ">= 0.0.0"
-        ]
-      ],
-      "chocolatey (1.0.2)": [
-        [
-          "windows",
-          "~> 1.38"
-        ]
-      ],
-      "tm-php (0.1.19)": [
-        [
-          "ark",
-          ">= 1.2.1"
-        ],
-        [
-          "vcruntime",
-          ">= 0.0.0"
-        ],
-        [
-          "windows",
-          ">= 0.0.0"
-        ],
-        [
-          "chocolatey",
           ">= 0.0.0"
         ]
       ]
