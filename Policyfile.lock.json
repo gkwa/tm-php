@@ -1,9 +1,8 @@
 {
-  "revision_id": "be229de2eeccb4e0d4b7c8da0721a876ad5dbe76995a3675e7878a381dca2af1",
+  "revision_id": "b3adf637c7604af4d7cb327a7212f0f460697c3b5f00e393208368a3350cc7f9",
   "name": "tm-php",
   "run_list": [
-    "recipe[tm-php::default]",
-    "recipe[vcruntime::vc12]"
+    "recipe[tm-php::default]"
   ],
   "cookbook_locks": {
     "ark": {
@@ -19,14 +18,14 @@
     },
     "tm-php": {
       "version": "0.1.19",
-      "identifier": "08e1009d8fffe9e9b069cf23cd25249062d098f4",
-      "dotted_decimal_identifier": "2499192573394921.65777638066867493.40202551728372",
+      "identifier": "e879f893c12edbcd4a1b63cd6a85812ce3486e14",
+      "dotted_decimal_identifier": "65436303134633691.57783851724663429.142029791718932",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "git@github.com:taylormonacelli/tm-php",
-        "revision": "5c5eae7e4141ca06d8af4881c648db305ad7ddf3",
+        "revision": "106e30b0720c26c46d2723a777753734b04fb439",
         "working_tree_clean": false,
         "published": false,
         "synchronized_remote_branches": [
@@ -49,14 +48,14 @@
       }
     },
     "seven_zip": {
-      "version": "2.0.1",
-      "identifier": "1ef062de1bc4cb14e4a78fb739e104eb9508473e",
-      "dotted_decimal_identifier": "8708556725142731.5880907856034273.5409864173374",
-      "cache_key": "seven_zip-2.0.1-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/seven_zip/versions/2.0.1/download",
+      "version": "2.0.2",
+      "identifier": "8e6795446cfa8e0a4a09cef4d5d35eb2d522a24d",
+      "dotted_decimal_identifier": "40083337488693902.2896155754419667.104122173006413",
+      "cache_key": "seven_zip-2.0.2-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/seven_zip/versions/2.0.2/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/seven_zip/versions/2.0.1/download",
-        "version": "2.0.1"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/seven_zip/versions/2.0.2/download",
+        "version": "2.0.2"
       }
     },
     "windows": {
@@ -93,14 +92,14 @@
       }
     },
     "compat_resource": {
-      "version": "12.10.7",
-      "identifier": "0cf5d376444495035f02b8cb1acf2b3e5a0a51e5",
-      "dotted_decimal_identifier": "3647988291617941.948890225023695.47546798592485",
-      "cache_key": "compat_resource-12.10.7-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/compat_resource/versions/12.10.7/download",
+      "version": "12.14.0",
+      "identifier": "0e312445de07c01dbf8a7ee3f34d1327ce285503",
+      "dotted_decimal_identifier": "3994681534711744.8373375879869261.21061683401987",
+      "cache_key": "compat_resource-12.14.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/compat_resource/versions/12.14.0/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/compat_resource/versions/12.10.7/download",
-        "version": "12.10.7"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/compat_resource/versions/12.14.0/download",
+        "version": "12.14.0"
       }
     },
     "vcruntime": {
@@ -137,7 +136,7 @@
       ],
       [
         "seven_zip",
-        "= 2.0.1"
+        "= 2.0.2"
       ],
       [
         "windows",
@@ -153,7 +152,7 @@
       ],
       [
         "compat_resource",
-        "= 12.10.7"
+        "= 12.14.0"
       ],
       [
         "vcruntime",
@@ -189,7 +188,7 @@
           ">= 12.10.0"
         ]
       ],
-      "seven_zip (2.0.1)": [
+      "seven_zip (2.0.2)": [
         [
           "windows",
           ">= 1.2.2"
@@ -214,7 +213,7 @@
           ">= 0.0.0"
         ]
       ],
-      "compat_resource (12.10.7)": [
+      "compat_resource (12.14.0)": [
 
       ],
       "vcruntime (0.2.0)": [
