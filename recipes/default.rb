@@ -24,10 +24,9 @@ end
 template "#{node['php']['install_dir']}\\php.ini" do
   source node['php']['php_ini_template']
   owner 'Administrator'
-  mode '0755'
 
   variables(
-    'error_log' => 'c:\Apache\logs\php_error.log'
+    'error_log' => node['php']['php_error_log']
   )
 end
 
