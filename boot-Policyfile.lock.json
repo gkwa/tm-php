@@ -1,0 +1,241 @@
+{
+  "revision_id": "101ab57354def962419b6328d095f8126d0f9024746b05ccaca4fb3fdff86dd5",
+  "name": "tm-php",
+  "run_list": [
+    "recipe[tm-php::hello]"
+  ],
+  "cookbook_locks": {
+    "ark": {
+      "version": "1.2.1",
+      "identifier": "828fa4f81209c57cf86efdcfe6d57eea91899c63",
+      "dotted_decimal_identifier": "36749685671725509.35176052700473045.139545929161827",
+      "cache_key": "ark-98f6d4420e03c7424ce9b00f60f25a0c1ff2df6d",
+      "origin": "git://github.com/taylormonacelli/ark.git",
+      "source_options": {
+        "git": "git://github.com/taylormonacelli/ark.git",
+        "revision": "98f6d4420e03c7424ce9b00f60f25a0c1ff2df6d"
+      }
+    },
+    "tm-php": {
+      "version": "0.1.19",
+      "identifier": "4b4c47ef49a35d5abf250a2a834772a63fd77965",
+      "dotted_decimal_identifier": "21194495094268765.25542913709212487.126058361223525",
+      "source": ".",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": "git@github.com:taylormonacelli/tm-php",
+        "revision": "5119c0ed758a3ce4f906f3d8e2cc9cd37ff7f6b1",
+        "working_tree_clean": false,
+        "published": false,
+        "synchronized_remote_branches": [
+
+        ]
+      },
+      "source_options": {
+        "path": "."
+      }
+    },
+    "vcruntime": {
+      "version": "0.2.2",
+      "identifier": "b4da8bac24aee3a0cbb5ba6092dca2b68f2bcb56",
+      "dotted_decimal_identifier": "50905789231312611.45259977650115292.178904969759574",
+      "cache_key": "vcruntime-d0d04c668f7fa437e541e34a19ea276ce7fc07d9",
+      "origin": "git://github.com/taylormonacelli/vcruntime.git",
+      "source_options": {
+        "git": "git://github.com/taylormonacelli/vcruntime.git",
+        "revision": "d0d04c668f7fa437e541e34a19ea276ce7fc07d9"
+      }
+    },
+    "build-essential": {
+      "version": "6.0.4",
+      "identifier": "6ca850c821bde0e559359e33926756a6da7b8596",
+      "dotted_decimal_identifier": "30584362393255392.64555856489058919.95274630088086",
+      "cache_key": "build-essential-6.0.4-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/build-essential/versions/6.0.4/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/build-essential/versions/6.0.4/download",
+        "version": "6.0.4"
+      }
+    },
+    "seven_zip": {
+      "version": "2.0.2",
+      "identifier": "8e6795446cfa8e0a4a09cef4d5d35eb2d522a24d",
+      "dotted_decimal_identifier": "40083337488693902.2896155754419667.104122173006413",
+      "cache_key": "seven_zip-2.0.2-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/seven_zip/versions/2.0.2/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/seven_zip/versions/2.0.2/download",
+        "version": "2.0.2"
+      }
+    },
+    "windows": {
+      "version": "1.44.3",
+      "identifier": "856961abed6d3eb7083b1dd1d71bdd130a809576",
+      "dotted_decimal_identifier": "37552040119725374.51518970734434075.243073850316150",
+      "cache_key": "windows-1.44.3-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/1.44.3/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/1.44.3/download",
+        "version": "1.44.3"
+      }
+    },
+    "chef_handler": {
+      "version": "1.4.0",
+      "identifier": "aa794c0c3a03d09a5e22ca2ffb70115fda923471",
+      "dotted_decimal_identifier": "47984113570415568.43450649927482224.19103386580081",
+      "cache_key": "chef_handler-1.4.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/chef_handler/versions/1.4.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/chef_handler/versions/1.4.0/download",
+        "version": "1.4.0"
+      }
+    },
+    "mingw": {
+      "version": "1.2.4",
+      "identifier": "c4f0ae0ce0635c9ec82cdc01b570a7dcc1b19521",
+      "dotted_decimal_identifier": "55433725766296412.44693141315499376.184566584284449",
+      "cache_key": "mingw-1.2.4-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/mingw/versions/1.2.4/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/mingw/versions/1.2.4/download",
+        "version": "1.2.4"
+      }
+    },
+    "compat_resource": {
+      "version": "12.14.0",
+      "identifier": "0e312445de07c01dbf8a7ee3f34d1327ce285503",
+      "dotted_decimal_identifier": "3994681534711744.8373375879869261.21061683401987",
+      "cache_key": "compat_resource-12.14.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/compat_resource/versions/12.14.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/compat_resource/versions/12.14.0/download",
+        "version": "12.14.0"
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "ark",
+        ">= 1.2.1"
+      ],
+      [
+        "tm-php",
+        ">= 0.0.0"
+      ],
+      [
+        "vcruntime",
+        ">= 0.2.2"
+      ],
+      [
+        "build-essential",
+        "= 6.0.4"
+      ],
+      [
+        "seven_zip",
+        "= 2.0.2"
+      ],
+      [
+        "windows",
+        "= 1.44.3"
+      ],
+      [
+        "chef_handler",
+        "= 1.4.0"
+      ],
+      [
+        "mingw",
+        "= 1.2.4"
+      ],
+      [
+        "compat_resource",
+        "= 12.14.0"
+      ]
+    ],
+    "dependencies": {
+      "ark (1.2.1)": [
+        [
+          "build-essential",
+          ">= 0.0.0"
+        ],
+        [
+          "windows",
+          ">= 0.0.0"
+        ],
+        [
+          "seven_zip",
+          ">= 0.0.0"
+        ]
+      ],
+      "build-essential (6.0.4)": [
+        [
+          "seven_zip",
+          ">= 0.0.0"
+        ],
+        [
+          "mingw",
+          ">= 1.1.0"
+        ],
+        [
+          "compat_resource",
+          ">= 12.10.0"
+        ]
+      ],
+      "seven_zip (2.0.2)": [
+        [
+          "windows",
+          ">= 1.2.2"
+        ]
+      ],
+      "windows (1.44.3)": [
+        [
+          "chef_handler",
+          ">= 0.0.0"
+        ]
+      ],
+      "chef_handler (1.4.0)": [
+
+      ],
+      "mingw (1.2.4)": [
+        [
+          "seven_zip",
+          ">= 0.0.0"
+        ],
+        [
+          "compat_resource",
+          ">= 0.0.0"
+        ]
+      ],
+      "compat_resource (12.14.0)": [
+
+      ],
+      "vcruntime (0.2.2)": [
+        [
+          "windows",
+          ">= 0.0.0"
+        ]
+      ],
+      "tm-php (0.1.19)": [
+        [
+          "ark",
+          ">= 1.2.1"
+        ],
+        [
+          "vcruntime",
+          ">= 0.0.0"
+        ],
+        [
+          "windows",
+          ">= 0.0.0"
+        ]
+      ]
+    }
+  }
+}

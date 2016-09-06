@@ -6,17 +6,28 @@
 
 include_recipe 'windows'
 include_recipe 'ark'
-include_recipe "vcruntime::vc#{node['php'][ node['php']['version'] ]['vcredist_year']}"
+include_recipe "vcruntime::vc#{node['php'][ node['php']['version'] ]['vcredist_name']}"
 
 ark node['php']['package_name'] do
   url node['php']['url']
   owner 'Administrator'
   version node['php']['version']
-  win_install_dir 'c:\php'
+  win_install_dir "#{node['php']['install_dir']}"
   strip_components 0
   action :install
 end
 
-windows_path 'C:\php' do
+windows_path "#{node['php']['install_dir']}" do
   action :add
 end
+
+template "#{node['php']['install_dir']}\\php.ini" do
+  source node['php']['php_ini_template']
+  owner 'Administrator'
+  mode '0755'
+
+  variables(
+    'error_log' => 'c:\Apache\logs\php_error.log'
+  )
+end
+

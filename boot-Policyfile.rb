@@ -5,7 +5,7 @@
 
 name "tm-php"
 default_source :supermarket
-run_list "tm-php::default"
+run_list "tm-php::hello"
 cookbook "ark", ">= 1.2.1", github: "taylormonacelli/ark"
 cookbook "tm-php", path: "."
 cookbook "vcruntime", ">= 0.2.2", github: "taylormonacelli/vcruntime"
