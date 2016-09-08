@@ -11,6 +11,13 @@ default['php']['version'] = '5.6.10'
 default['php']['version'] = '7.0.10'
 
 default['php']['php_error_log'] = 'c:\Apache\logs\php_error.log'
+default['php']['timezone'] = 'America/Los_Angeles'
+
+default['php']['include_path']  = []
+default['php']['include_path'] += [ '.' ]
+default['php']['include_path'] += [ 'C:\Apache\htdocs\includes' ]
+default['php']['include_path'] += [ 'C:\Apache\htdocs\includes\ls' ]
+default['php']['include_path'] += [ 'C:\PHP\PEAR' ]
 
 if default['php']['environment'] == "production"
   default['php']['short_open_tag'] = 'Off'

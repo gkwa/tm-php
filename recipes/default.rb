@@ -6,7 +6,7 @@
 
 include_recipe 'windows'
 include_recipe 'ark'
-include_recipe "vcruntime::vc#{node['php'][ node['php']['version'] ]['vcredist_name']}"
+include_recipe "vcruntime::vc#{node['php'][node['php']['version']]['vcredist_name']}"
 
 ark node['php']['package_name'] do
   url node['php']['url']
@@ -26,7 +26,11 @@ template "#{node['php']['install_dir']}\\php.ini" do
   owner 'Administrator'
 
   variables(
-    'error_log' => node['php']['php_error_log']
+      :error_log => node[:php][:php_error_log],
+      :enabled_extensions => node[:php][:enabled_extensions],
+      :short_open_tag => node[:php][:short_open_tag],
+      :timezone => node[:php][:timezone],
+      :include_path => node[:php][:include_path]
   )
 end
 
