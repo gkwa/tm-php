@@ -1,5 +1,7 @@
 default['php']['syspath'] = true
 
+default['php']['environment'] = "production" # "development" or "production"
+
 default['php']['install_dir'] = "#{ENV['SystemDrive']}\\PHP"
 default['php']['install_dir'] = "#{ENV['PROGRAMFILES']}\\PHP"
 
@@ -9,6 +11,12 @@ default['php']['version'] = '5.6.10'
 default['php']['version'] = '7.0.10'
 
 default['php']['php_error_log'] = 'c:\Apache\logs\php_error.log'
+
+if default['php']['environment'] == "production"
+  default['php']['short_open_tag'] = 'Off'
+else
+  default['php']['short_open_tag'] = 'Off'
+end
 
 default['php']['enabled_extensions'] = %w(
   php_mbstring.dll
@@ -41,6 +49,10 @@ default['php']['7.0.10']['x86']['checksum'] = '1a25c404f2855d5b576169dd419fe74f5
 
 basename = "php-#{default['php']['version']}-Win32-VC#{default['php'][default['php']['version']]['vcredist_name']}-#{arch}"
 zip = "#{basename}.zip"
-
 default['php']['url'] = "#{default['php']['base_url']}/#{zip}"
-default['php']['php_ini_template'] = "#{basename}-php.ini-production.erb"
+
+if node['php']['environment'] == "development"
+  default['php']['php_ini_template'] = "#{basename}-php.ini-development.erb"
+else
+  default['php']['php_ini_template'] = "#{basename}-php.ini-production.erb"
+end

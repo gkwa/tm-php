@@ -199,7 +199,7 @@ engine = On
 ; Development Value: Off
 ; Production Value: Off
 ; http://php.net/short-open-tag
-short_open_tag = Off
+short_open_tag = <%= @short_open_tag %>
 
 ; The number of significant digits displayed in floating point numbers.
 ; http://php.net/precision
@@ -887,7 +887,7 @@ default_socket_timeout = 60
 ;extension=php_pdo_sqlite.dll
 ;extension=php_pgsql.dll
 ;extension=php_shmop.dll
-<%- @node['php']['enabled_extensions'].each do |ext| %>
+<%- @enabled_extensions.each do |ext| %>
 extension=<%= "#{ext}" %>
 <%- end %>
 
