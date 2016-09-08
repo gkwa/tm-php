@@ -1,5 +1,5 @@
 {
-  "revision_id": "db32c8d9ea5ed17832be2f3a50f2295613dd5d88c7578d79b5953e647d002bf7",
+  "revision_id": "66284179877b541d83e66d336ff83d6d9dffa19126ecc3e94e407e7d7f7ca2b1",
   "name": "tm-php",
   "run_list": [
     "recipe[tm-php::hello]",
@@ -19,14 +19,14 @@
     },
     "tm-php": {
       "version": "0.1.19",
-      "identifier": "8b05e81ca204638c2317284b89ad3ae1a8dcd9d7",
-      "dotted_decimal_identifier": "39131516233712739.39445079106750893.64740875098583",
+      "identifier": "1987251b5f610b508b0083157fce6e92d79c934b",
+      "dotted_decimal_identifier": "7185467860541707.22670832452337614.121576961643339",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "git@github.com:taylormonacelli/tm-php",
-        "revision": "1b3634465ae0b59a8195a85dc5775f3db4420b6b",
+        "revision": "99f446471ce484ef0b735a7c1cb15edbd94f9f2f",
         "working_tree_clean": false,
         "published": false,
         "synchronized_remote_branches": [
@@ -49,14 +49,14 @@
       }
     },
     "build-essential": {
-      "version": "6.0.4",
-      "identifier": "6ca850c821bde0e559359e33926756a6da7b8596",
-      "dotted_decimal_identifier": "30584362393255392.64555856489058919.95274630088086",
-      "cache_key": "build-essential-6.0.4-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/build-essential/versions/6.0.4/download",
+      "version": "6.0.5",
+      "identifier": "6f606a18c6d9b26f5ac47774a1be59bc8ac59c6a",
+      "dotted_decimal_identifier": "31349731213367730.31343522279104958.98666316930154",
+      "cache_key": "build-essential-6.0.5-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/build-essential/versions/6.0.5/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/build-essential/versions/6.0.4/download",
-        "version": "6.0.4"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/build-essential/versions/6.0.5/download",
+        "version": "6.0.5"
       }
     },
     "seven_zip": {
@@ -71,25 +71,14 @@
       }
     },
     "windows": {
-      "version": "1.44.3",
-      "identifier": "856961abed6d3eb7083b1dd1d71bdd130a809576",
-      "dotted_decimal_identifier": "37552040119725374.51518970734434075.243073850316150",
-      "cache_key": "windows-1.44.3-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/1.44.3/download",
+      "version": "2.0.2",
+      "identifier": "59e724b02f856cdd8a72cb82922eb820557ab3c7",
+      "dotted_decimal_identifier": "25305417687991660.62358195498291758.202449012569031",
+      "cache_key": "windows-2.0.2-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/2.0.2/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/1.44.3/download",
-        "version": "1.44.3"
-      }
-    },
-    "chef_handler": {
-      "version": "1.4.0",
-      "identifier": "aa794c0c3a03d09a5e22ca2ffb70115fda923471",
-      "dotted_decimal_identifier": "47984113570415568.43450649927482224.19103386580081",
-      "cache_key": "chef_handler-1.4.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/chef_handler/versions/1.4.0/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/chef_handler/versions/1.4.0/download",
-        "version": "1.4.0"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/2.0.2/download",
+        "version": "2.0.2"
       }
     },
     "mingw": {
@@ -104,14 +93,14 @@
       }
     },
     "compat_resource": {
-      "version": "12.14.0",
-      "identifier": "0e312445de07c01dbf8a7ee3f34d1327ce285503",
-      "dotted_decimal_identifier": "3994681534711744.8373375879869261.21061683401987",
-      "cache_key": "compat_resource-12.14.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/compat_resource/versions/12.14.0/download",
+      "version": "12.14.1",
+      "identifier": "ea06c114d5c8e401e4e7d5bb1c449b2e17958b84",
+      "dotted_decimal_identifier": "65872570898303204.533159351098436.170622266477444",
+      "cache_key": "compat_resource-12.14.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/compat_resource/versions/12.14.1/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/compat_resource/versions/12.14.0/download",
-        "version": "12.14.0"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/compat_resource/versions/12.14.1/download",
+        "version": "12.14.1"
       }
     }
   },
@@ -137,7 +126,7 @@
       ],
       [
         "build-essential",
-        "= 6.0.4"
+        "= 6.0.5"
       ],
       [
         "seven_zip",
@@ -145,11 +134,7 @@
       ],
       [
         "windows",
-        "= 1.44.3"
-      ],
-      [
-        "chef_handler",
-        "= 1.4.0"
+        "= 2.0.2"
       ],
       [
         "mingw",
@@ -157,7 +142,7 @@
       ],
       [
         "compat_resource",
-        "= 12.14.0"
+        "= 12.14.1"
       ]
     ],
     "dependencies": {
@@ -175,7 +160,7 @@
           ">= 0.0.0"
         ]
       ],
-      "build-essential (6.0.4)": [
+      "build-essential (6.0.5)": [
         [
           "seven_zip",
           ">= 0.0.0"
@@ -186,7 +171,7 @@
         ],
         [
           "compat_resource",
-          ">= 12.10.0"
+          ">= 12.14.0"
         ]
       ],
       "seven_zip (2.0.2)": [
@@ -195,13 +180,7 @@
           ">= 1.2.2"
         ]
       ],
-      "windows (1.44.3)": [
-        [
-          "chef_handler",
-          ">= 0.0.0"
-        ]
-      ],
-      "chef_handler (1.4.0)": [
+      "windows (2.0.2)": [
 
       ],
       "mingw (1.2.4)": [
@@ -214,7 +193,7 @@
           ">= 0.0.0"
         ]
       ],
-      "compat_resource (12.14.0)": [
+      "compat_resource (12.14.1)": [
 
       ],
       "vcruntime (0.2.2)": [

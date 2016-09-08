@@ -30,7 +30,7 @@ template "#{node['php']['install_dir']}\\php.ini" do
       :enabled_extensions => node[:php][:enabled_extensions],
       :short_open_tag => node[:php][:short_open_tag],
       :timezone => node[:php][:timezone],
-      :include_path => node[:php][:include_path]
+      :include_path => node[:php][:include_path],
+      :extension_dir => node[:php][:extension_dir]
   )
 end
-

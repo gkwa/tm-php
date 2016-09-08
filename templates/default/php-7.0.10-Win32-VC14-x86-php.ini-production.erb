@@ -726,6 +726,9 @@ user_dir =
 ; extension_dir = "./"
 ; On windows:
 ; extension_dir = "ext"
+<% unless @extension_dir.to_s == '' %>
+extension_dir = "<%= @extension_dir %>"
+<% end %>
 
 ; Directory where the temporary files should be placed.
 ; Defaults to the system default (see sys_get_temp_dir)
@@ -918,7 +921,9 @@ cli_server.color = On
 ; Defines the default timezone used by the date functions
 ; http://php.net/date.timezone
 ;date.timezone =
+<% unless @timezone.to_s == '' %>
 date.timezone = <%= @timezone %>
+<% end %>
 
 ; http://php.net/date.default-latitude
 ;date.default_latitude = 31.7667
