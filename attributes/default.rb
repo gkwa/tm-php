@@ -57,12 +57,13 @@ default['php']['7.0.10']['vcredist_year'] = '15'
 default['php']['7.0.10']['x64']['checksum'] = '5d099320d05e7a52ee28c95be23ee1839327d70937346ccf485c41a080c6d33f'
 default['php']['7.0.10']['x86']['checksum'] = '1a25c404f2855d5b576169dd419fe74f58af9a26e50b15dfb18e30bb0b73d6fb'
 
-basename = "php-#{default['php']['version']}-Win32-VC#{default['php'][default['php']['version']]['vcredist_fname']}-#{arch}"
-zip = "#{basename}.zip"
+basename1 = "php-#{default['php']['version']}-Win32-VC#{default['php'][default['php']['version']]['vcredist_fname']}-#{arch}"
+basename2 = "php-#{default['php']['version']}-Win32-VC#{default['php'][default['php']['version']]['vcredist_fname']}"
+zip = "#{basename1}.zip"
 default['php']['url'] = "#{default['php']['base_url']}/#{zip}"
 
 if node['php']['environment'] == "development"
-  default['php']['php_ini_template'] = "#{basename}-php.ini-development.erb"
+  default['php']['php_ini_template'] = "#{basename2}-php.ini-development.erb"
 else
-  default['php']['php_ini_template'] = "#{basename}-php.ini-production.erb"
+  default['php']['php_ini_template'] = "#{basename2}-php.ini-production.erb"
 end
