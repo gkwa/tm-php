@@ -8,7 +8,6 @@ default['php']['extension_dir'] = "#{default['php']['install_dir']}\\ext"
 
 default['php']['package_name'] = 'PHP'
 default['php']['base_url'] = "http://installer-bin.streambox.com"
-default['php']['version'] = '5.6.10'
 default['php']['version'] = '7.0.10'
 
 default['php']['php_error_log'] = 'c:\Apache\logs\php_error.log'
