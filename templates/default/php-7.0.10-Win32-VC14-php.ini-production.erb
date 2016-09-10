@@ -895,7 +895,7 @@ default_socket_timeout = 60
 ;extension=php_pgsql.dll
 ;extension=php_shmop.dll
 <%- @enabled_extensions.each do |ext| %>
-extension=<%= "#{ext}" %>
+extension=<%= ext %>
 <%- end %>
 
 ; The MIBS data available in the PHP distribution must be installed.

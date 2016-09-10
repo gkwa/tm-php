@@ -26,11 +26,11 @@ template "#{node['php']['install_dir']}\\php.ini" do
   owner 'Administrator'
 
   variables(
-      :error_log => node[:php][:php_error_log],
-      :enabled_extensions => node[:php][:enabled_extensions],
-      :short_open_tag => node[:php][:short_open_tag],
-      :timezone => node[:php][:timezone],
-      :include_path => node[:php][:include_path],
-      :extension_dir => node[:php][:extension_dir]
+      error_log: node['php']['php_error_log'],
+      enabled_extensions: node['php']['enabled_extensions'],
+      short_open_tag: node['php']['short_open_tag'],
+      timezone: node['php']['timezone'],
+      include_path: node['php']['include_path'],
+      extension_dir: node['php']['extension_dir']
   )
 end
