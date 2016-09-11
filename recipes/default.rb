@@ -10,13 +10,12 @@ include_recipe "vcruntime::vc#{node['php']['vc']}"
 
 seven_zip_archive node['php']['package_name'] do
   path node['php']['install_dir']
-  source node['php'][node['php']['version']][node['kernel']['machine']]['url']
+  source node['php'][node['php']['arch']][node['php']['version']]['url']
   checksum node['php']['checksum']
   timeout 30
   overwrite true
   not_if { ::File.directory?(node['php']['install_dir']) }
   Chef::Log.debug("installing version #{node['php']['version']}")
-
 end
 
 windows_path "#{node['php']['install_dir']}" do

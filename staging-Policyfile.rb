@@ -6,8 +6,9 @@
 name "tm-php"
 default_source :supermarket
 run_list "tm-php::hello", "tm-php::default"
-cookbook "ark", ">= 1.2.1", github: "taylormonacelli/ark"
+
 cookbook "tm-php", path: "."
 cookbook "vcruntime", ">= 0.2.2", github: "taylormonacelli/vcruntime"
 
-# default['php']['version'] = '5.6.10'
+default['php']['version'] = '5.6.10'
+default['php']['environment'] = "production"
