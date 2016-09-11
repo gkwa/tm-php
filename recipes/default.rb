@@ -4,17 +4,19 @@
 #
 # Copyright (c) 2016 The Authors, All Rights Reserved.
 
+include_recipe 'seven_zip'
 include_recipe 'windows'
-include_recipe 'ark'
-include_recipe "vcruntime::vc#{node['php'][node['php']['version']]['vcredist_name']}"
+include_recipe "vcruntime::vc#{node['php']['vc']}"
 
-ark node['php']['package_name'] do
-  url node['php']['url']
-  owner 'Administrator'
-  version node['php']['version']
-  win_install_dir "#{node['php']['install_dir']}"
-  strip_components 0
-  action :install
+seven_zip_archive node['php']['package_name'] do
+  path node['php']['install_dir']
+  source node['php'][node['php']['version']][node['kernel']['machine']]['url']
+  checksum node['php']['checksum']
+  timeout 30
+  overwrite true
+  not_if { ::File.directory?(node['php']['install_dir']) }
+  Chef::Log.debug("installing version #{node['php']['version']}")
+
 end
 
 windows_path "#{node['php']['install_dir']}" do
