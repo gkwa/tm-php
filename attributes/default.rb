@@ -4,7 +4,6 @@ default['php']['environment'] = "production" # "development" or "production"
 
 default['php']['install_dir'] = "#{ENV['SystemDrive']}\\PHP"
 default['php']['install_dir'] = "#{ENV['ProgramFiles']}\\PHP"
-default['php']['extension_dir'] = "#{default['php']['install_dir']}\\ext"
 default['php']['extension_dir'] = "ext"
 
 default['php']['package_name'] = 'PHP'
