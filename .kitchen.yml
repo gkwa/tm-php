@@ -1,3 +1,4 @@
+# http://www.kickflop.net/blog/2015/10/28/using-test-kitchen-and-kitchen-vagrant-behind-an-http-proxy/
 ---
 driver:
   name: vagrant
@@ -5,13 +6,27 @@ driver:
   - VagrantAdditionalConfig.rb
 provisioner:
   name: chef_zero
-  chef_omnibus_install_options: -d /tmp/vagrant-cache/vagrant_omnibus
-  require_chef_omnibus: 12.10.24
+  require_chef_omnibus: true
+  install_msi_url: http://packages.chef.io/stable/windows/2012r2/chef-client-12.14.77-1-x86.msi
+  # vm's gateway is my virtualbox host running OSX squid, this saves me
+  # re-downloading msi as long as squid runs on virtualbox host
+  http_proxy: http://10.0.2.2:3128
+
 platforms:
-- name: ubuntu-14.04
-- name: centos-7.1
+- name: ws7e
+  os_type: windows
+  driver_config:
+    communicator: winrm
+    vm_hostname: false
+  transport:
+    name: winrm
+
 suites:
 - name: default
   run_list:
   - recipe[tm-php::default]
   attributes:
+    chef-client:
+      # Allows your Chef run to fetch stuff it requires
+      config:
+        http_proxy: "http://10.0.2.2:3128"
