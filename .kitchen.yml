@@ -5,7 +5,7 @@ driver:
   vagrantfiles:
   - VagrantAdditionalConfig.rb
 provisioner:
-  name: chef_zero
+  name: policyfile_zero
   require_chef_omnibus: true
   install_msi_url: http://packages.chef.io/stable/windows/2012r2/chef-client-12.14.77-1-x86.msi
   # vm's gateway is my virtualbox host running OSX squid, this saves me
