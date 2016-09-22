@@ -15,6 +15,9 @@ provisioner:
   roles_path: '/path/to/roles'
   environments_path: '/path/to/environments'
 
+  cookbook_path:
+    - /Users/demo/pdev/TaylorMonacelli/chef-practice/cookbook-template/tm-php/cookbooks/tm-php
+    
 platforms:
 - name: ws7e
   os_type: windows
