@@ -11,8 +11,6 @@ provisioner:
   # vm's gateway is my virtualbox host running OSX squid, this saves me
   # re-downloading msi as long as squid runs on virtualbox host
   http_proxy: http://10.0.2.2:3128
-  client_rb:
-    environment: myenvironment
 
 platforms:
 - name: ws7e
