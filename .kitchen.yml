@@ -24,7 +24,6 @@ platforms:
 suites:
 - name: default
   run_list:
-  - recipe[tm-php::default]
   attributes:
     chef-client:
       # Allows your Chef run to fetch stuff it requires
