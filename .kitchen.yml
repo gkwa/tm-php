@@ -2,8 +2,6 @@
 ---
 driver:
   name: vagrant
-  vagrantfiles:
-  - VagrantAdditionalConfig.rb
 provisioner:
   name: policyfile_zero
   require_chef_omnibus: true
@@ -11,9 +9,6 @@ provisioner:
   # vm's gateway is my virtualbox host running OSX squid, this saves me
   # re-downloading msi as long as squid runs on virtualbox host
   http_proxy: http://10.0.2.2:3128
-  data_bags_path: '/path/to/data_bags'
-  roles_path: '/path/to/roles'
-  environments_path: '/path/to/environments'
 
 platforms:
 - name: ws7e
@@ -26,8 +21,6 @@ platforms:
 
 suites:
 - name: default
-  run_list:
-  - recipe[tm-php::default]
   attributes:
     chef-client:
       # Allows your Chef run to fetch stuff it requires
