@@ -1,5 +1,5 @@
 {
-  "revision_id": "de09bbee7695ee482385a44943de474e937c1242cbe3c6a829469c84fdd21f7e",
+  "revision_id": "258bbe96920e8be01c8bcec40ddf04e07b8a7ca73765c9a7ab86f9295f87f832",
   "name": "tm-php",
   "run_list": [
     "recipe[tm-php::hello]",
@@ -8,15 +8,15 @@
   "cookbook_locks": {
     "tm-php": {
       "version": "0.1.19",
-      "identifier": "ccdd59add24f971567ca98cfc19d4e43652fd9f6",
-      "dotted_decimal_identifier": "57664272487042967.6025094355730845.86051367410166",
+      "identifier": "893981418622742f82791020676d3ea027910a4d",
+      "dotted_decimal_identifier": "38625299122233972.13372780378613613.68857579506253",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "git@github.com:taylormonacelli/tm-php",
-        "revision": "2fd16807e5310d1a224a2d5bcf30c43d053d8d38",
-        "working_tree_clean": true,
+        "revision": "cba3c7fd1f27a3784a51dd47ca9acd8d4e9b6b61",
+        "working_tree_clean": false,
         "published": false,
         "synchronized_remote_branches": [
 
@@ -89,20 +89,6 @@
       ]
     ],
     "dependencies": {
-      "tm-php (0.1.19)": [
-        [
-          "seven_zip",
-          ">= 0.0.0"
-        ],
-        [
-          "vcruntime",
-          ">= 0.0.0"
-        ],
-        [
-          "windows",
-          ">= 0.0.0"
-        ]
-      ],
       "seven_zip (2.0.2)": [
         [
           "windows",
@@ -113,6 +99,20 @@
 
       ],
       "vcruntime (0.2.2)": [
+        [
+          "windows",
+          ">= 0.0.0"
+        ]
+      ],
+      "tm-php (0.1.19)": [
+        [
+          "seven_zip",
+          ">= 0.0.0"
+        ],
+        [
+          "vcruntime",
+          ">= 0.0.0"
+        ],
         [
           "windows",
           ">= 0.0.0"
