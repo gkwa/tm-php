@@ -1,4 +1,3 @@
-# http://www.kickflop.net/blog/2015/10/28/using-test-kitchen-and-kitchen-vagrant-behind-an-http-proxy/
 ---
 driver:
   name: vagrant
