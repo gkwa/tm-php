@@ -124,7 +124,7 @@ default['php']['x86']['7.0.10']['url']         = "http://installer-bin.streambox
 default['php']['x86']['7.0.10']['checksum']    = "1a25c404f2855d5b576169dd419fe74f58af9a26e50b15dfb18e30bb0b73d6fb"
 
 # eg php-7.0.10-Win32-VC14-php.ini-production.erb
-default['php']['php_ini_template'] = "#{default['php']['template_basename'][default['php']['version']]}-php.ini-#{default['php']['environment']}.erb"
+default['php']['php_ini_template'] = "#{node['php']['template_basename'][node['php']['version']]}-php.ini-#{node['php']['environment']}.erb"
 
 php_version = node['php']['version']
 arch = default['php']['arch']
