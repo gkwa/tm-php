@@ -8,7 +8,11 @@ default_source :supermarket
 run_list "tm-php::hello", "tm-php::default"
 
 cookbook "tm-php", path: "."
-cookbook "vcruntime", ">= 0.2.2", github: "taylormonacelli/vcruntime"
+cookbook "vcruntime", ">= 0.2.2", github: "taylormonacelli/vcruntime", branch: 'tm/api-ms-win-crt-runtime-l1-1-0-dll'
+
+# Great for testing without pushing to github:
+# cookbook "vcruntime", ">= 0.2.2", path: "/Users/demo/pdev/TaylorMonacelli/vcruntime"
 
 default['php']['version'] = '5.6.10'
+default['php']['version'] = '7.0.10'
 default['php']['environment'] = "production"

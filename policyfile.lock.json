@@ -1,5 +1,5 @@
 {
-  "revision_id": "258bbe96920e8be01c8bcec40ddf04e07b8a7ca73765c9a7ab86f9295f87f832",
+  "revision_id": "84378404551febccbdd1ab3abc8132e78846595417ac77f504e02b0271d31892",
   "name": "tm-php",
   "run_list": [
     "recipe[tm-php::hello]",
@@ -8,14 +8,14 @@
   "cookbook_locks": {
     "tm-php": {
       "version": "0.1.19",
-      "identifier": "893981418622742f82791020676d3ea027910a4d",
-      "dotted_decimal_identifier": "38625299122233972.13372780378613613.68857579506253",
+      "identifier": "7e824695f6da3cd473685360f27c0392981da925",
+      "dotted_decimal_identifier": "35609086740847164.59799586975314556.3928152189221",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "git@github.com:taylormonacelli/tm-php",
-        "revision": "cba3c7fd1f27a3784a51dd47ca9acd8d4e9b6b61",
+        "revision": "8935d0cb3e67f1fd35b35b7f2fba46d497d3f212",
         "working_tree_clean": false,
         "published": false,
         "synchronized_remote_branches": [
@@ -27,14 +27,23 @@
       }
     },
     "vcruntime": {
-      "version": "0.2.2",
-      "identifier": "b4da8bac24aee3a0cbb5ba6092dca2b68f2bcb56",
-      "dotted_decimal_identifier": "50905789231312611.45259977650115292.178904969759574",
-      "cache_key": "vcruntime-d0d04c668f7fa437e541e34a19ea276ce7fc07d9",
-      "origin": "git://github.com/taylormonacelli/vcruntime.git",
+      "version": "0.2.3",
+      "identifier": "fad5dd7c6d50027a65dc5a4977bf930822e39b00",
+      "dotted_decimal_identifier": "70603891429691394.34451944240674751.161663154363136",
+      "source": "../../../../../vcruntime",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": "ssh://git@github.com/taylormonacelli/vcruntime",
+        "revision": "c2a9b604b06645821cc730af83a43a36984066d0",
+        "working_tree_clean": false,
+        "published": false,
+        "synchronized_remote_branches": [
+
+        ]
+      },
       "source_options": {
-        "git": "git://github.com/taylormonacelli/vcruntime.git",
-        "revision": "d0d04c668f7fa437e541e34a19ea276ce7fc07d9"
+        "path": "../../../../../vcruntime"
       }
     },
     "seven_zip": {
@@ -62,7 +71,7 @@
   },
   "default_attributes": {
     "php": {
-      "version": "5.6.10",
+      "version": "7.0.10",
       "environment": "production"
     }
   },
@@ -77,7 +86,7 @@
       ],
       [
         "vcruntime",
-        ">= 0.2.2"
+        ">= 0.2.3"
       ],
       [
         "seven_zip",
@@ -98,7 +107,7 @@
       "windows (2.0.2)": [
 
       ],
-      "vcruntime (0.2.2)": [
+      "vcruntime (0.2.3)": [
         [
           "windows",
           ">= 0.0.0"
