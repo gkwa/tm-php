@@ -11,7 +11,7 @@ provisioner:
   log_level: debug
 
 platforms:
-- name: ws7e
+- name: mwrock/Windows2012R2
   os_type: windows
   driver_config:
     communicator: winrm
