@@ -27,6 +27,15 @@ platforms:
     vm_hostname: false
   transport:
     name: winrm
+- name: mwrock/Windows2016
+  os_type: windows
+  driver_config:
+    box: mwrock/Windows2016
+    box_url: atlas.hashicorp.com/mwrock/Windows2016
+    communicator: winrm
+    vm_hostname: false
+  transport:
+    name: winrm
 
 suites:
 - name: default
