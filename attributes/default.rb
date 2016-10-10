@@ -1,4 +1,5 @@
 default['php']['syspath'] = true
+default['php']['version'] = '7.0.10'
 default['php']['package_name'] = 'PHP'
 default['php']['environment'] = "production" # "development" or "production"
 default['php']['install_dir'] = "#{ENV['SystemDrive']}\\PHP"
