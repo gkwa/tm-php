@@ -11,10 +11,11 @@ include_recipe "vcruntime::vc#{node['php']['vc']}"
 seven_zip_archive node['php']['package_name'] do
   path node['php']['install_dir']
   source node['php'][node['php']['arch']][node['php']['version']]['url']
+  Chef::Log.debug("download url #{node['php'][node['php']['arch']][node['php']['version']]['url']}")
   checksum node['php']['checksum']
   timeout 30
   overwrite true
-  not_if { ::File.directory?(node['php']['install_dir']) }
+  not_if "\"#{node['php']['install_dir']}\\php.exe\" --version | findstr #{node['php']['version']}"
   Chef::Log.debug("installing version #{node['php']['version']}")
 end
 
@@ -25,13 +26,4 @@ end
 template "#{node['php']['install_dir']}\\php.ini" do
   source node['php']['php_ini_template']
   owner 'Administrator'
-
-  variables(
-      error_log: node['php']['php_error_log'],
-      enabled_extensions: node['php']['enabled_extensions'],
-      short_open_tag: node['php']['short_open_tag'],
-      timezone: node['php']['timezone'],
-      include_path: node['php']['include_path'],
-      extension_dir: node['php']['extension_dir']
-  )
 end

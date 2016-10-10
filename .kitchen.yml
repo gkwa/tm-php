@@ -22,6 +22,7 @@ platforms:
   os_type: windows
   driver_config:
     box: mwrock/Windows2012R2
+    gui: false #headless
 #    box_url: https://atlas.hashicorp.com/mwrock/boxes/Windows2012R2/versions/0.5.3/providers/virtualbox.box
     communicator: winrm
     vm_hostname: false
