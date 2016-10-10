@@ -720,7 +720,7 @@ user_dir = <%= node['php']['user_dir'] %>
 ; http://php.net/extension-dir
 ; extension_dir = "./"
 ; On windows:
-<% if node['php']['extension_dir'] != '"ext"' %>extension_dir = "<%= node['php']['extension_dir'] %>"<% else %>; extension_dir = "ext"<% end %>
+<% if !node['php']['extension_dir'].to_s.empty? %>extension_dir = "<%= node['php']['extension_dir'] %>"<% else %>; extension_dir = "ext"<% end %>
 
 ; Directory where the temporary files should be placed.
 ; Defaults to the system default (see sys_get_temp_dir)
