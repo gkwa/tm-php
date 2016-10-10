@@ -3,11 +3,6 @@ default['php']['package_name'] = 'PHP'
 default['php']['environment'] = "production" # "development" or "production"
 default['php']['install_dir'] = "#{ENV['SystemDrive']}\\PHP"
 
-default['php']['x86_64']['5.6.10']['url']      = 'http://installer-bin.streambox.com/php-5.6.10-Win32-VC11-x64.zip'
-default['php']['template_basename']['5.6.10']  = 'php-5.6.10-Win32-VC11'
-default['php']['x86_64']['5.6.10']['checksum'] = 'd5dcabcdc61a6e2f81d36c3e4ce26543b3f80c235d3bbd57932aeb4387197546'
-default['php']['x86']['5.6.10']['url']         = 'http://installer-bin.streambox.com/php-5.6.10-Win32-VC11-x86.zip'
-default['php']['x86']['5.6.10']['checksum']    = '88cf0e5a05f7d5f1529c6ca27d569e7bdc0e85093c650e89f917206420e18045'
 default['php']['x86_64']['7.0.10']['url']      = 'http://installer-bin.streambox.com/php-7.0.10-Win32-VC14-x64.zip'
 default['php']['template_basename']['7.0.10']  = 'php-7.0.10-Win32-VC14'
 default['php']['x86_64']['7.0.10']['checksum'] = '5d099320d05e7a52ee28c95be23ee1839327d70937346ccf485c41a080c6d33f'

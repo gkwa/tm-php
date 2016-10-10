@@ -13,7 +13,6 @@ cookbook "vcruntime", ">= 0.2.2", github: "taylormonacelli/vcruntime", branch: '
 # Great for testing without pushing to github:
 # cookbook "vcruntime", ">= 0.2.2", path: "/Users/demo/pdev/TaylorMonacelli/vcruntime"
 
-default['php']['version'] = '5.6.10'
 default['php']['version'] = '7.0.10'
 default['php']['environment'] = "production"
 default['php']['date.timezone'] = 'America/Los_Angeles'
