@@ -7,7 +7,8 @@ name "tm-php"
 default_source :supermarket
 run_list "tm-php::hello", "tm-php::default"
 
-cookbook "tm-php", path: "."
+# cookbook "tm-php", path: "."
+cookbook "tm-php", github: "taylormonacelli/tm-php"
 cookbook "vcruntime", ">= 0.2.2", github: "taylormonacelli/vcruntime", branch: 'tm/api-ms-win-crt-runtime-l1-1-0-dll'
 
 # Great for testing without pushing to github:
