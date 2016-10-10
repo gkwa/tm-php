@@ -16,3 +16,4 @@ cookbook "vcruntime", ">= 0.2.2", github: "taylormonacelli/vcruntime", branch: '
 default['php']['version'] = '5.6.10'
 default['php']['version'] = '7.0.10'
 default['php']['environment'] = "production"
+default['php']['date.timezone'] = 'America/Los_Angeles'
