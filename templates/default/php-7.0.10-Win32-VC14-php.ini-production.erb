@@ -886,6 +886,12 @@ default_socket_timeout = <%= node['php']['default_socket_timeout'] %>
 <% if !node['php']['php_pdo_sqlite.dll']['enabled'] %>;<% end %>extension=php_pdo_sqlite.dll
 <% if !node['php']['php_pgsql.dll']['enabled'] %>;<% end %>extension=php_pgsql.dll
 <% if !node['php']['php_shmop.dll']['enabled'] %>;<% end %>extension=php_shmop.dll
+<% if !node['php']['php_com_dotnet.dll']['enabled'] %>;<% end %>extension=php_com_dotnet.dll
+<% if !node['php']['php_enchant.dll']['enabled'] %>;<% end %>extension=php_enchant.dll
+<% if !node['php']['php_odbc.dll']['enabled'] %>;<% end %>extension=php_odbc.dll
+<% if !node['php']['php_opcache.dll']['enabled'] %>;<% end %>extension=php_opcache.dll
+<% if !node['php']['php_phpdbg_webhelper.dll']['enabled'] %>;<% end %>extension=php_phpdbg_webhelper.dll
+<% if !node['php']['php_sysvshm.dll']['enabled'] %>;<% end %>extension=php_sysvshm.dll
 
 ; The MIBS data available in the PHP distribution must be installed.
 ; See http://www.php.net/manual/en/snmp.installation.php
