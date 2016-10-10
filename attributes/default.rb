@@ -2,7 +2,7 @@ default['php']['syspath'] = true
 default['php']['version'] = '7.0.10'
 default['php']['package_name'] = 'PHP'
 default['php']['environment'] = "production" # "development" or "production"
-default['php']['install_dir'] = "#{ENV['SystemDrive']}\\PHP"
+default['php']['install_dir'] = "#{ENV['ProgramFiles']}\\PHP"
 
 default['php']['x86_64']['7.0.10']['url']      = 'http://installer-bin.streambox.com/php-7.0.10-Win32-VC14-x64.zip'
 default['php']['template_basename']['7.0.10']  = 'php-7.0.10-Win32-VC14'
