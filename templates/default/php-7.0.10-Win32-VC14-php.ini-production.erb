@@ -698,7 +698,7 @@ default_charset = "<%= node['php']['default_charset'] %>"
 ;include_path = ".:/php/includes"
 ;
 ; Windows: "\path1;\path2"
-<% if node['php']['include_path'].join(';') != %q{.;c:\php\includes} %>include_path = "<%= node['php']['include_path'].join(';') %>"<% else %>;include_path = ".;c:\php\includes"<% end %>
+<% if node['php']['include_path'] != %q{".;c:\php\includes"} %>include_path = "<%= node['php']['include_path'] %>"<% else %>;include_path = ".;c:\php\includes"<% end %>
 ;
 ; PHP's default setting for include_path is ".;/path/to/php/pear"
 ; http://php.net/include-path
