@@ -14,8 +14,6 @@ platforms:
 - name: ws7e
   os_type: windows
   driver_config:
-    network:
-      - ['private_network', {ip: '192.168.33.33'}]
     communicator: winrm
     vm_hostname: false
   transport:
@@ -23,8 +21,6 @@ platforms:
 - name: mwrock/Windows2012R2
   os_type: windows
   driver_config:
-    network:
-      - ['private_network', {ip: '192.168.33.34'}]
     box: mwrock/Windows2012R2
     gui: false #headless
 #    box_url: https://atlas.hashicorp.com/mwrock/boxes/Windows2012R2/versions/0.5.3/providers/virtualbox.box
@@ -35,8 +31,6 @@ platforms:
 - name: mwrock/Windows2016
   os_type: windows
   driver_config:
-    network:
-      - ['private_network', {ip: '192.168.33.35'}]
     box: mwrock/Windows2016
     box_url: https://atlas.hashicorp.com/mwrock/boxes/Windows2016/versions/0.2.0/providers/virtualbox.box
     communicator: winrm
