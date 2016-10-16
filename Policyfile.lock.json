@@ -1,0 +1,112 @@
+{
+  "revision_id": "d5ab00c64070bc2a31b1723f5c6600dff8f708cb84ab535b7b246ac9fd9a604e",
+  "name": "tm-php",
+  "run_list": [
+    "recipe[tm-php::hello]",
+    "recipe[tm-php::default]"
+  ],
+  "cookbook_locks": {
+    "tm-php": {
+      "version": "0.1.19",
+      "identifier": "4c05253ee76f7fb9f03734020411ce8de5c48a18",
+      "dotted_decimal_identifier": "21397755757293439.52336990577886225.227108840573464",
+      "cache_key": "tm-php-5612774d23ba2708a0e0854aa820326f3fda74a3",
+      "origin": "git://github.com/taylormonacelli/tm-php.git",
+      "source_options": {
+        "git": "git://github.com/taylormonacelli/tm-php.git",
+        "revision": "5612774d23ba2708a0e0854aa820326f3fda74a3"
+      }
+    },
+    "vcruntime": {
+      "version": "0.2.3",
+      "identifier": "f089c335de45bf9f712c54e1d1092981d3a54852",
+      "dotted_decimal_identifier": "67705465925944767.44878956513579273.45637578344530",
+      "cache_key": "vcruntime-446b739bc24f5a64a10eb0e481e80e9e017563f3",
+      "origin": "git://github.com/taylormonacelli/vcruntime.git",
+      "source_options": {
+        "git": "git://github.com/taylormonacelli/vcruntime.git",
+        "revision": "446b739bc24f5a64a10eb0e481e80e9e017563f3",
+        "branch": "tm/api-ms-win-crt-runtime-l1-1-0-dll"
+      }
+    },
+    "seven_zip": {
+      "version": "2.0.2",
+      "identifier": "8e6795446cfa8e0a4a09cef4d5d35eb2d522a24d",
+      "dotted_decimal_identifier": "40083337488693902.2896155754419667.104122173006413",
+      "cache_key": "seven_zip-2.0.2-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/seven_zip/versions/2.0.2/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/seven_zip/versions/2.0.2/download",
+        "version": "2.0.2"
+      }
+    },
+    "windows": {
+      "version": "2.0.2",
+      "identifier": "59e724b02f856cdd8a72cb82922eb820557ab3c7",
+      "dotted_decimal_identifier": "25305417687991660.62358195498291758.202449012569031",
+      "cache_key": "windows-2.0.2-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/2.0.2/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/2.0.2/download",
+        "version": "2.0.2"
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "tm-php",
+        ">= 0.0.0"
+      ],
+      [
+        "vcruntime",
+        ">= 0.2.2"
+      ],
+      [
+        "seven_zip",
+        "= 2.0.2"
+      ],
+      [
+        "windows",
+        "= 2.0.2"
+      ]
+    ],
+    "dependencies": {
+      "tm-php (0.1.19)": [
+        [
+          "seven_zip",
+          ">= 0.0.0"
+        ],
+        [
+          "vcruntime",
+          ">= 0.0.0"
+        ],
+        [
+          "windows",
+          ">= 0.0.0"
+        ]
+      ],
+      "vcruntime (0.2.3)": [
+        [
+          "windows",
+          ">= 0.0.0"
+        ]
+      ],
+      "seven_zip (2.0.2)": [
+        [
+          "windows",
+          ">= 1.2.2"
+        ]
+      ],
+      "windows (2.0.2)": [
+
+      ]
+    }
+  }
+}
