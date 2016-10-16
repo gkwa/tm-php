@@ -32,7 +32,7 @@ platforms:
   os_type: windows
   driver_config:
     box: mwrock/Windows2016
-    box_url: atlas.hashicorp.com/mwrock/Windows2016
+    box_url: https://atlas.hashicorp.com/mwrock/boxes/Windows2016/versions/0.2.0/providers/virtualbox.box
     communicator: winrm
     vm_hostname: false
   transport:
