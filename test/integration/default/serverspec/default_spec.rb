@@ -13,6 +13,7 @@ describe 'tm-php::default' do
   when 'windows'
   describe command('cmd /c php --version') do
     its(:stdout) { should match(/PHP 7.0.10/) }
+    its(:stdout) { should_not match(/PHP 7.0.11/) }
     its(:stdout) { should_not match(/dammit not working 7.0.10/) }
     its(:exit_status) { should eq 0 }
   end
