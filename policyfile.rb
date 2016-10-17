@@ -6,6 +6,7 @@
 name "tm-php"
 default_source :supermarket
 run_list "tm-php::hello", "tm-php::default"
+named_run_list :myphp, "tm-php::default"
 
 # cookbook "tm-php", path: "."
 cookbook "tm-php", github: "taylormonacelli/tm-php"
