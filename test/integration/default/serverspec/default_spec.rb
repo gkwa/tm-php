@@ -9,16 +9,12 @@ else
 end
 
 describe 'tm-php::default' do
-#  cmd = "#{node['php']['install_dir']}\\php.exe"
-#  v = "#{node['php']['version']}"
-
-#  describe command("cmd /c \"#{cmd}\" --version") do
-#  describe command('cmd /c "C:\Program Files\PHP\php.exe" --version') do
+  case os[:family]
+  when 'windows'
   describe command('cmd /c php --version') do
-
     its(:stdout) { should match(/PHP 7.0.10/) }
     its(:stdout) { should_not match(/dammit not working 7.0.10/) }
     its(:exit_status) { should eq 0 }
-
+  end
   end
 end
