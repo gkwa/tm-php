@@ -35,8 +35,6 @@ platforms:
 - name: mwrock/Windows2016
   os_type: windows
   driver_config:
-    network:
-      - ['private_network', {ip: '192.168.33.35'}]
     box: mwrock/Windows2016
     box_url: https://atlas.hashicorp.com/mwrock/boxes/Windows2016/versions/0.2.0/providers/virtualbox.box
     communicator: winrm
