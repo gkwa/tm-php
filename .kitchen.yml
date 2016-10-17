@@ -39,4 +39,6 @@ platforms:
     name: winrm
 
 suites:
-- name: default
+  - name: default
+    run_list:
+      - recipe[tm-php::default]
