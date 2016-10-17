@@ -1,5 +1,13 @@
 require 'spec_helper'
 
+# Required by serverspec
+if (/cygwin|mswin|mingw|bccwin|wince|emx/ =~ RUBY_PLATFORM).nil?
+  set :backend, :exec
+else
+  set :backend, :cmd
+  set :os, family: 'windows'
+end
+
 describe 'tm-php::default' do
   case os[:family]
   when 'windows'
