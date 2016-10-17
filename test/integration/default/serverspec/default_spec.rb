@@ -16,7 +16,7 @@ describe 'tm-php::default' do
     v = "#{node['php']['version']}"
 
     describe command('cmd /c "#{cmd}" --version') do
-      its(:stdout) { should match(/PHP #{v}/) }
+      its(:stdout) { should match(/dammit not working #{v}/) }
       its(:exit_status) { should eq 0 }
     end
   end
