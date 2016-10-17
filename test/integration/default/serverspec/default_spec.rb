@@ -9,15 +9,12 @@ else
 end
 
 describe 'tm-php::default' do
-  case os[:family]
-  when 'windows'
+  cmd = "#{node['php']['install_dir']}\\php.exe"
+  v = "#{node['php']['version']}"
 
-    cmd = "#{node['php']['install_dir']}\\php.exe"
-    v = "#{node['php']['version']}"
+  describe command("cmd /c \"#{cmd}\" --version") do
+    its(:stdout) { should match(/dammit not working #{v}/) }
+    its(:exit_status) { should eq 0 }
 
-    describe command("cmd /c \"#{cmd}\" --version") do
-      its(:stdout) { should match(/dammit not working #{v}/) }
-      its(:exit_status) { should eq 0 }
-    end
   end
 end
