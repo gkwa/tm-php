@@ -15,6 +15,7 @@ describe 'tm-php::default' do
     its(:stdout) { should match(/PHP 7.0.10/) }
     its(:stdout) { should_not match(/PHP 7.0.11/) }
     its(:stdout) { should_not match(/dammit not working 7.0.10/) }
+    its(:stdout) { should match(/taylor/) }
     its(:exit_status) { should eq 0 }
   end
   end
