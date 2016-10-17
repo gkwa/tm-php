@@ -41,4 +41,6 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[tm-php::default]
+      - ["recipe[tm-php::default]"]
+    attributes:
+      
