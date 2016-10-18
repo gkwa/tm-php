@@ -20,12 +20,12 @@ platforms:
     vm_hostname: false
   transport:
     name: winrm
-- name: ferventcoder/win2008r2-x64-nocm
+- name: mark-r-stevens/windows10x64.box
   os_type: windows
   driver_config:
     network:
       - ['private_network', {ip: '192.168.33.34'}]
-    box: ferventcoder/win2008r2-x64-nocm
+    box: mark-r-stevens/windows10x64.box
     gui: false #headless
     communicator: winrm
     vm_hostname: false
