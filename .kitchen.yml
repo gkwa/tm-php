@@ -31,6 +31,17 @@ platforms:
     vm_hostname: false
   transport:
     name: winrm
+- name: win2008
+  os_type: windows
+  driver_config:
+    network:
+      - ['private_network', {ip: '192.168.33.34'}]
+    box: alexshd/windows_2008_r2_virtualbox
+    gui: false #headless
+    communicator: winrm
+    vm_hostname: false
+  transport:
+    name: winrm
 - name: mwrock/Windows2012R2
   os_type: windows
   driver_config:
