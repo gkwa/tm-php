@@ -9,7 +9,7 @@ run_list "tm-php::hello", "tm-php::default"
 named_run_list :myphp, "tm-php::default"
 named_run_list :template_test, "tm-php::template_test"
 
-# cookbook "tm-php", path: "."
+# cookbook "tm-php", path: "." # Great for testing on workstation/mbp
 cookbook "tm-php", github: "taylormonacelli/tm-php"
 cookbook "vcruntime", ">= 0.2.2", github: "taylormonacelli/vcruntime", branch: 'tm/api-ms-win-crt-runtime-l1-1-0-dll'
 
