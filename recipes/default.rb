@@ -23,7 +23,9 @@ windows_path "#{node['php']['install_dir']}" do
   action :add
 end
 
-template "#{node['php']['install_dir']}\\php.ini" do
+php_ini_path=File.join("#{node['php']['install_dir']}", 'php.ini')
+
+template "#{php_ini_path}" do
   source node['php']['php_ini_template']
   owner 'Administrator'
 end
