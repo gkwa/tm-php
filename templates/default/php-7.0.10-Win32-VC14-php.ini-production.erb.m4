@@ -201,6 +201,9 @@ engine = <%= node['php']['engine'] %>
 ; http://php.net/short-open-tag
 short_open_tag = <%= node['php']['short_open_tag'] %>
 
+ifelse(phpver,`5.6.2',`; Allow ASP-style <% %> tags.
+; http://php.net/asp-tags
+asp_tags = Off',`')dnl
 ; The number of significant digits displayed in floating point numbers.
 ; http://php.net/precision
 precision = <%= node['php']['precision'] %>
