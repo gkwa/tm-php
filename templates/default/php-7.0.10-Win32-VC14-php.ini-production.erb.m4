@@ -1554,9 +1554,9 @@ zend.assertions = <%= node['php']['zend.assertions'] %>
 ; http://php.net/assert.callback
 <% if node['php']['assert.callback'] != 0 %>assert.callback = <%= node['php']['assert.callback'] %><% else %>;assert.callback = 0<% end %>
 
-; Eval the expression with current error_reporting().  Set to true if you want
+`; Eval the expression with current error_reporting().  Set to true if you want
 ; error_reporting(0) around the eval().
-; http://php.net/assert.quiet-eval
+; http://php.net/assert.quiet-eval'
 <% if node['php']['assert.quiet_eval'] != 0 %>assert.quiet_eval = <%= node['php']['assert.quiet_eval'] %><% else %>;assert.quiet_eval = 0<% end %>
 
 [COM]
