@@ -11,11 +11,12 @@ provisioner:
   log_level: info
 
 platforms:
-- name: ws7e
+- name: ws7e1
   os_type: windows
   driver_config:
     communicator: winrm
     vm_hostname: false
+    box: ws7e1
   transport:
     name: winrm
 - name: mark-r-stevens/windows10x64.box
