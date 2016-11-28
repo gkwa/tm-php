@@ -82,4 +82,4 @@ suites:
       chef-client:
         # Allows your Chef run to fetch stuff it requires
         config:
-          http_proxy: http://10.0.2.2:3128
+          http_proxy: http://10.0.5.2:3128
