@@ -1,6 +1,8 @@
 ---
 driver:
   name: vagrant
+  driver_config:
+    http_proxy: http://10.0.2.2:3128
 provisioner:
   name: policyfile_zero
   require_chef_omnibus: true
@@ -77,3 +79,7 @@ suites:
     run_list:
       - ["recipe[tm-php::default]"]
     attributes:
+      chef-client:
+        # Allows your Chef run to fetch stuff it requires
+        config:
+          http_proxy: http://10.0.2.2:3128
