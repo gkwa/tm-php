@@ -1,7 +1,7 @@
 ---
 driver:
   name: vagrant
-  driver_config:
+  driver:
     http_proxy: http://10.0.5.2:3128
     communicator: winrm
     vm_hostname: false
@@ -17,7 +17,7 @@ provisioner:
 platforms:
 - name: ws7e1
   os_type: windows
-  driver_config:
+  driver:
     gui: false
     box: ws7e1
   transport:
@@ -25,7 +25,7 @@ platforms:
 
 - name: mwrock/Windows2012R2
   os_type: windows
-  driver_config:
+  driver:
     gui: false
     network:
       - ['private_network', {ip: '192.168.33.34'}]
@@ -35,7 +35,7 @@ platforms:
 
 - name: mwrock/Windows2016
   os_type: windows
-  driver_config:
+  driver:
     gui: false
     box: mwrock/Windows2016
     box_url: https://atlas.hashicorp.com/mwrock/boxes/Windows2016/versions/0.2.0/providers/virtualbox.box
@@ -44,7 +44,7 @@ platforms:
 
 - name: win10x64-enterprise
   os_type: windows
-  driver_config:
+  driver:
     gui: false
     box: win10x64-enterprise
   transport:
@@ -52,7 +52,7 @@ platforms:
 
 - name: win2008r2-standard
   os_type: windows
-  driver_config:
+  driver:
     gui: false
     box: win2008r2-standard
   transport:
@@ -60,7 +60,7 @@ platforms:
 
 - name: win2012r2-datacenter
   os_type: windows
-  driver_config:
+  driver:
     gui: false
     box: win2012r2-datacenter
   transport:
@@ -68,7 +68,7 @@ platforms:
 
 - name: win2012r2-standard
   os_type: windows
-  driver_config:
+  driver:
     gui: false
     box: win2012r2-standard
   transport:
@@ -76,7 +76,7 @@ platforms:
 
 - name: win7x64-enterprise
   os_type: windows
-  driver_config:
+  driver:
     gui: false
     box: win7x64-enterprise
   transport:
@@ -84,7 +84,7 @@ platforms:
 
 - name: win7x86-enterprise
   os_type: windows
-  driver_config:
+  driver:
     gui: false
     box: win7x86-enterprise
   transport:
@@ -92,7 +92,7 @@ platforms:
 
 - name: win81x64-enterprise
   os_type: windows
-  driver_config:
+  driver:
     gui: false
     box: win81x64-enterprise
   transport:
@@ -100,7 +100,7 @@ platforms:
 
 - name: win81x86-enterprise
   os_type: windows
-  driver_config:
+  driver:
     gui: false
     box: win81x86-enterprise
   transport:
