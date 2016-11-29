@@ -3,6 +3,10 @@ driver:
   name: vagrant
   driver_config:
     http_proxy: http://10.0.5.2:3128
+    communicator: winrm
+    vm_hostname: false
+    gui: false #headless
+
 provisioner:
   name: policyfile_zero
   require_chef_omnibus: true
@@ -15,20 +19,16 @@ platforms:
 - name: ws7e1
   os_type: windows
   driver_config:
-    communicator: winrm
-    vm_hostname: false
     box: ws7e1
   transport:
     name: winrm
+
 - name: mark-r-stevens/windows10x64.box
   os_type: windows
   driver_config:
     network:
       - ['private_network', {ip: '192.168.33.34'}]
     box: mark-r-stevens/windows10x64.box
-    gui: false #headless
-    communicator: winrm
-    vm_hostname: false
   transport:
     name: winrm
 - name: win2008r2-datacenter
@@ -37,39 +37,44 @@ platforms:
     network:
       - ['private_network', {ip: '192.168.33.34'}]
     box: win2008r2-datacenter
-    gui: false #headless
-    communicator: winrm
-    vm_hostname: false
   transport:
     name: winrm
+
 - name: mwrock/Windows2012R2
   os_type: windows
   driver_config:
     network:
       - ['private_network', {ip: '192.168.33.34'}]
     box: mwrock/Windows2012R2
-    gui: false #headless
-#    box_url: https://atlas.hashicorp.com/mwrock/boxes/Windows2012R2/versions/0.5.3/providers/virtualbox.box
-    communicator: winrm
-    vm_hostname: false
   transport:
     name: winrm
-- name: eval-win2008r2-standard-nocm-1.0.4.box
+
+- name: eval-win2008r2-standard-nocm-1.0.4
   os_type: windows
   driver_config:
-    box: eval-win2008r2-standard-nocm-1.0.4.box
-    gui: false #headless
-    communicator: winrm
-    vm_hostname: false
+    box: eval-win2008r2-standard-nocm-1.0.4
   transport:
     name: winrm
+
+- name: eval-win2008r2-datacenter-nocm-1.0.4
+  os_type: windows
+  driver_config:
+    box: eval-win2008r2-datacenter-nocm-1.0.4
+  transport:
+    name: winrm
+
 - name: mwrock/Windows2016
   os_type: windows
   driver_config:
     box: mwrock/Windows2016
     box_url: https://atlas.hashicorp.com/mwrock/boxes/Windows2016/versions/0.2.0/providers/virtualbox.box
-    communicator: winrm
-    vm_hostname: false
+  transport:
+    name: winrm
+
+- name: eval-win2012r2-standard-nocm-1.0.4
+  os_type: windows
+  driver_config:
+    box: eval-win2012r2-standard-nocm-1.0.4
   transport:
     name: winrm
 
