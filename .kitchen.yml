@@ -23,48 +23,12 @@ platforms:
   transport:
     name: winrm
 
-- name: mark-r-stevens/windows10x64.box
-  os_type: windows
-  driver_config:
-    network:
-      - ['private_network', {ip: '192.168.33.34'}]
-    box: mark-r-stevens/windows10x64.box
-    gui: false #headless
-  transport:
-    name: winrm
-
-- name: win2008r2-datacenter
-  os_type: windows
-  driver_config:
-    network:
-      - ['private_network', {ip: '192.168.33.34'}]
-    box: win2008r2-datacenter
-    gui: false #headless
-  transport:
-    name: winrm
-
 - name: mwrock/Windows2012R2
   os_type: windows
   driver_config:
     network:
       - ['private_network', {ip: '192.168.33.34'}]
     box: mwrock/Windows2012R2
-    gui: false #headless
-  transport:
-    name: winrm
-
-- name: eval-win2008r2-standard-nocm-1.0.4
-  os_type: windows
-  driver_config:
-    box: eval-win2008r2-standard-nocm-1.0.4
-    gui: false #headless
-  transport:
-    name: winrm
-
-- name: eval-win2008r2-datacenter-nocm-1.0.4
-  os_type: windows
-  driver_config:
-    box: eval-win2008r2-datacenter-nocm-1.0.4
     gui: false #headless
   transport:
     name: winrm
@@ -78,10 +42,67 @@ platforms:
   transport:
     name: winrm
 
-- name: eval-win2012r2-standard-nocm-1.0.4
+- name: win10x64-enterprise
   os_type: windows
   driver_config:
-    box: eval-win2012r2-standard-nocm-1.0.4
+    box: win10x64-enterprise
+    gui: false
+  transport:
+    name: winrm
+
+- name: win2008r2-standard
+  os_type: windows
+  driver_config:
+    box: win2008r2-standard
+    gui: false
+  transport:
+    name: winrm
+
+- name: win2012r2-datacenter
+  os_type: windows
+  driver_config:
+    box: win2012r2-datacenter
+    gui: false
+  transport:
+    name: winrm
+
+- name: win2012r2-standard
+  os_type: windows
+  driver_config:
+    box: win2012r2-standard
+    gui: false
+  transport:
+    name: winrm
+
+- name: win7x64-enterprise
+  os_type: windows
+  driver_config:
+    box: win7x64-enterprise
+    gui: false
+  transport:
+    name: winrm
+
+- name: win7x86-enterprise
+  os_type: windows
+  driver_config:
+    box: win7x86-enterprise
+    gui: false
+  transport:
+    name: winrm
+
+- name: win81x64-enterprise
+  os_type: windows
+  driver_config:
+    box: win81x64-enterprise
+    gui: false
+  transport:
+    name: winrm
+
+- name: win81x86-enterprise
+  os_type: windows
+  driver_config:
+    box: win81x86-enterprise
+    gui: false
   transport:
     name: winrm
 
