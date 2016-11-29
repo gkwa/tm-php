@@ -5,6 +5,7 @@ driver:
     http_proxy: http://10.0.5.2:3128
     communicator: winrm
     vm_hostname: false
+    gui: false
 
 provisioner:
   name: policyfile_zero
