@@ -19,7 +19,6 @@ platforms:
   os_type: windows
   driver_config:
     box: ws7e1
-    gui: false #headless
   transport:
     name: winrm
 
@@ -29,7 +28,6 @@ platforms:
     network:
       - ['private_network', {ip: '192.168.33.34'}]
     box: mwrock/Windows2012R2
-    gui: false #headless
   transport:
     name: winrm
 
@@ -38,7 +36,6 @@ platforms:
   driver_config:
     box: mwrock/Windows2016
     box_url: https://atlas.hashicorp.com/mwrock/boxes/Windows2016/versions/0.2.0/providers/virtualbox.box
-    gui: false #headless
   transport:
     name: winrm
 
@@ -46,7 +43,6 @@ platforms:
   os_type: windows
   driver_config:
     box: win10x64-enterprise
-    gui: false
   transport:
     name: winrm
 
@@ -54,7 +50,6 @@ platforms:
   os_type: windows
   driver_config:
     box: win2008r2-standard
-    gui: false
   transport:
     name: winrm
 
@@ -62,7 +57,6 @@ platforms:
   os_type: windows
   driver_config:
     box: win2012r2-datacenter
-    gui: false
   transport:
     name: winrm
 
@@ -70,7 +64,6 @@ platforms:
   os_type: windows
   driver_config:
     box: win2012r2-standard
-    gui: false
   transport:
     name: winrm
 
@@ -78,7 +71,6 @@ platforms:
   os_type: windows
   driver_config:
     box: win7x64-enterprise
-    gui: false
   transport:
     name: winrm
 
@@ -86,7 +78,6 @@ platforms:
   os_type: windows
   driver_config:
     box: win7x86-enterprise
-    gui: false
   transport:
     name: winrm
 
@@ -94,7 +85,6 @@ platforms:
   os_type: windows
   driver_config:
     box: win81x64-enterprise
-    gui: false
   transport:
     name: winrm
 
@@ -102,7 +92,6 @@ platforms:
   os_type: windows
   driver_config:
     box: win81x86-enterprise
-    gui: false
   transport:
     name: winrm
 
