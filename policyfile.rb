@@ -15,6 +15,7 @@ cookbook "vcruntime", ">= 0.2.2", github: "taylormonacelli/vcruntime", branch: '
 
 # Great for testing without pushing to github:
 # cookbook "vcruntime", ">= 0.2.2", path: "/Users/demo/pdev/TaylorMonacelli/vcruntime"
+# cookbook "vcruntime", ">= 0.2.2", path: "/Users/demo/pdev/TaylorMonacelli/vcruntime", branch: 'tm/api-ms-win-crt-runtime-l1-1-0-dll'
 
 # Examples:
 #default['php']['install_dir'] = '/tmp'
